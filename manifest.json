@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Calicut University Sum",
+  "version": "0.1",
+  "content_scripts": [
+  {
+    "matches": [
+     	"http://www.universityofcalicut.info/*",
+     	"http://202.88.252.21/*"
+    ],
+    "js": ["content.js"]
+  }
+],
+"browser_action": {
+  "default_icon": "info.png"
+},
+"background": {
+  "scripts": ["background.js"]
+}
+}
